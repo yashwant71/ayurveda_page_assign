@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.434);
+    width: 100vw;
+    height: 10vh;
+}
+#logo{
+    margin-left: 20px;
+}
+#midbar{
+    display: flex;
+
+}
+#midbar span{
+    margin: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+#midbar span div{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+#midbar span div i{
+    font-size: 20px;
+}
+#loginbox{
+    margin-right: 20px;
+    cursor: pointer;
+}
+#headText{
+    margin-left: 5vw;
+    margin-top: 15vh;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#imageContainer{
+    width: 90vw;
+    margin: 5vh auto;
+    border: 1px solid black;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#graybgStr,#graybgMob,#graybgDri{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.306);
+}
+.imgbox{
+    height: inherit;
+    width: 30vw;
+    transition: width 0.5s;
+}
+.imgbox span{
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+    z-index: 3;
+    margin: 20px;
+}
+.rightbox{
+    width: inherit;
+    position: relative;
+    z-index: 4;
+}
+.rightbox i{
+    position: absolute;
+    right: 0px;
+    margin: 20px;
+    font-size: 1.2em;
+}
+.rightbox i::before{
+    color: white;
+}
+
+.imgbox img{
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    /* object-fit: contain; */
+    
+}
+/* #imageContainer::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: inherit;
+    background-color: rgba(0,0,0,0.25);
+} */
+
